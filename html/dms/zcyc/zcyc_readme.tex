@@ -1,0 +1,61 @@
+
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\date{}
+\begin{document}
+\begin{titlepage}
+  \title{Zero Coupon Yield Curve for India: methodology and sources}
+  \author{Finance Research Group}
+  \maketitle
+\end{titlepage}
+\section*{Panel 1: Daily ZCYC (Jun 2001 - Sep 2020) }
+Panel 1 is a video of the daily Zero Coupon Yield Curve (ZCYC) in India for the period Jun 2001 - Sep 2020. 
+The ZCYC parameters are modeled using the \href{https://econpapers.repec.org/article/ucpjnlbus/v_3a60_3ay_3a1987_3ai_3a4_3ap_3a473-89.htm}{Nelson-Siegel model (3-factor model)} for the period Jun 2001 - Dec 2010 and using the \href{https://econpapers.repec.org/paper/nbrnberwo/4871.htm}{Nelson-Siegel-Svensson (5-factor model)} for the period Jan 2011 - Sep 2020. 
+The Nelson-Siegel model parameters for the Jun 2001 - Dec 2010 period are from NSE and that for the Jan 2011 - Sep 2020 period, are from CCIL. \\ \\
+
+We calculate the ZCYC for daily maturities from 1 day to 30 years using the following formulae - 
+\begin{itemize}
+\item For the period Jun 2001 - Dec 2010, we use Nelson-Siegel (3-factor model)
+  \begin{equation}
+    R(m)= \beta_0 + (\beta_1 + \beta_2)\cdot\frac{[1-\exp(-\frac{m}{\tau})]}{\frac{m}{\tau}} - \beta_2\cdot[\exp(-\frac{m}{\tau})] 
+  \end{equation}
+  where, m is maturity,\\
+  $\beta_0$ , $\beta_1$, $\beta_2$ and $\tau$ are parameters of the equation,\\
+  and, R(m) is the yield for maturity (m).
+  
+\item For the period Jan 2011 - Sep 2020, we use Nelson-Siegel-Svensson (5-factor model) 
+  
+  \begin{equation}
+\begin{split}
+  R(m)= \beta_0 + (\beta_1 + \beta_2)\cdot[\frac{[1-\exp(-\frac{m}{\tau_1})]}{\frac{m}{\tau_1}}]  - \beta_2\cdot[\exp(-\frac{m}{\tau_1})]\\
+  + \beta_3\cdot[\frac{[1-\exp(-\frac{m}{\tau_2})]}{\frac{m}{\tau_2}}]  - \beta_3\cdot[\exp(-\frac{m}{\tau_2})] 
+\end{split}
+\end{equation}
+  where, m is maturity,\\
+  $\beta_0$ , $\beta_1$, $\beta_2$, $\beta_3$, $\tau_1$ and $\tau_2$ are parameters of the equation,\\
+  and, R(m) is the yield for maturity (m).
+
+\end{itemize} 
+
+The daily ZCYC is colour coded to capture the inversion of the term structure using the 10 year and the 91 day maturity.
+\begin{itemize}
+\item When 10 year maturity is $>=$ 91 day maturity, the ZCYC curve is blue.
+\item When 10 year maturity is $<$ 91 day maturity, the ZCYC curve is red.
+\end{itemize}
+
+\section*{Panel 2: Evolution of ZCYC (Jun 2001 - Sep 2020)}
+
+It compares the ZCYC over time by showing one ZCYC for each year, which is as at the last day of March in that particular year. 
+For example - for the year 2011, the curve represents ZCYC on $31^{st}$ March 2011. The computation of ZCYC is as per the method described for Panel 1.
+
+\section*{Panel 3: Term spread}
+
+The term spread is calculated for 2 maturity pair :
+\begin{itemize}
+\item 10 year and 91 day, and 
+\item 10 year and 2 year. 
+\end{itemize}
+The term spread is computed at a daily frequency as the rolling window average of the last 30 trading day spread.
+\end{document}

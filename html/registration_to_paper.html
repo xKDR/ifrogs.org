@@ -1,0 +1,362 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Finance Research Group</title>
+    <!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+	  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ </head>
+  <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the
+        way to the bottom of the topbar */
+      }
+  </style>
+
+
+    <style>
+      .center {
+      margin: auto;
+      width: 70%;
+      box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+      border-radius: 20px;
+      border: 3px solid #73AD21;
+      padding: 30px;
+      }
+
+      input {
+      -webkit-box-sizing:border-box;  /*Safari/Chrome*/
+      -moz-box-sizing:border-box;  /*Firefox*/
+      box-sizing:border-box;  
+      }
+    </style>  
+
+  <body>
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Finance Research Group</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="papers.html">Papers</a></li>
+            <li><a href="policy.html">Policy</a></li>
+            <li><a href="system.html">Systems</a></li>
+            <li><a href="events.html">Events</a></li>
+	    <li><a href="https://www.youtube.com/channel/UCuaLCxW_JGs6Ulnvbslg6Iw">Videos</a></li>
+	    <li><a href="conf.html">Conferences</a></li>
+	      <li><a href="commentary.html">Commentary</a></li>
+              <li><a href="people.html">People</a></li>
+              <li><a href="contact.html">Contact</a></li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+   <!------------------------------- navbar end ----------->
+
+
+ <!-- Registration form-->
+   <section id="form">
+     <div class="container">
+       <h2><b>Submit your paper</b></h2>
+       <hr>
+
+       <div class="row-fluid">
+	 <div class="span7">
+	   <div class="center">
+	     
+       <form role="form" class="form-horizontal" action="/cgi-bin/emf-form.cgi" name="registration-form" method="post" enctype="multipart/form-data" role="form" data-toggle="validator">
+
+	 <div class="container">
+
+
+            <div class="form-group">
+
+	         <div class="col-sm-4">
+
+		   <b><lable><sup><font size="3" color="red">*</font></sup>
+		     Paper details:</lable></b>
+		   <p> <textarea class="form-control" rows="3" cols="10" name="paper-name" maxlength="500" placeholder="Paper Name" required></textarea></p> 
+		 </div>
+
+	         <div class="col-sm-3">
+		   <b><lable><sup><font size="3" color="red">*</font></sup>
+		     Paper</b>(PDF Only):</lable>
+		   <input type="file" name="paper-pdf" accept="application/pdf" id="paper-pdf" required>
+		 </div>
+
+	    </div>
+
+
+
+	   <div class="form-group">
+	        <div class="col-sm-1">
+		  <label><sup><font size="3" color="red">*</font></sup>Title:</label>
+		  <select  name="title" required>
+		    <option></option>
+		    <option value="Mr">Mr</option>
+		    <option value="Ms">Ms</option>
+		    <option value="Mrs">Mrs</option>
+		  </select>
+		</div>
+	       
+	        <div class="col-sm-3">
+		  <label><sup><font size="3" color="red">*</font></sup>First name:</label>
+		  <input class="form-control" type="text" name="firstname" placeholder="First name" required>
+		</div>
+
+		<div class="col-sm-3">	
+		  <label><sup><font size="3" color="red">*</font></sup>Last name:</label>
+		  <input class="form-control" type="text" name="lastname" placeholder="Last name" required><br>
+		</div>
+	   </div>
+
+            <div class="form-group">
+	      
+	      <div class="col-sm-3">
+		<label><sup><font size="3" color="red">*</font></sup>Affiliation/Organisation:</label>
+		<input class="form-control" type="text" name="affiliation" placeholder="Affiliation/Organisation" required><br>
+	      </div>
+
+	      <div class="col-sm-2">
+		<b><lable><sup><font size="3" color="red">*</font></sup>Email Id:</lable></b>
+		<input class="form-control" type="email" name="email-address" placeholder="Email" required>
+	      </div>
+
+	      <div class="col-sm-2">		
+		<b><lable><sup><font size="3" color="red">*</font></sup>Photo</b>(JPG only 300dpi):</lable>
+		<input type="file" name="photo" accept="image/*" id="photo" required>
+	      </div>
+	       
+
+	    </div>
+
+            <div class="form-group">
+	      
+	      <div class="col-sm-3">
+		<label><sup><font size="3" color="red">*</font></sup>Country:</label>
+		<input class="form-control" type="text" name="country" maxlength="20" placeholder="Country" required>
+	      </div>
+	      
+	      <div class="col-sm-2">
+		<label>Phone Number:</label>
+		<input class="form-control" type="text" name="telnum" pattern="^\d{1,6}-\d{1,20}$" maxlength="20" placeholder="Phone number">
+	      </div>
+
+	      <div class="col-sm-2">
+		<label>Mobile Number:</label>
+		<input class="form-control" type="text" name="mobile num" pattern="^\+\d{1,6}-\d{1,20}$" maxlength="20" placeholder="Mobile Number">
+	      </div>
+ 
+	    </div>
+
+            <div class="form-group">
+
+	         <div class="col-sm-4">
+		   <b><sup><font size="3" color="red">*</font></sup>Short profile of 100 words</b>
+		   <br>(Characters remaining:
+		   <input disabled maxlength="3" size="3" value="1000" id="counter">)
+		   <p> <textarea class="form-control" rows="3" cols="10" name="shortbio" maxlength="1000"
+				 placeholder="Type here...." onkeyup="textCounter(this,'counter',1000);" id="shortbio" required></textarea></p>
+		 </div>
+
+		 
+	         <div class="col-sm-3">
+		   <b>Author's CV</b>
+		   <input type="file" name="biodata-pdf" accept="application/pdf" id="biodata-pdf">
+		 </div>
+
+	    </div>
+
+	    </div>
+
+
+            <div class="form-group">
+
+	         <div class="col-sm-7">
+
+		   <input type="submit" name="submit" value="Submit" id="submit"/> <input type="reset" name="reset"  value="Reset" /> 
+		   
+		   </div>
+
+		 </div>
+	 </div>	
+       </form>
+   
+       </div> <!-- center -->
+	</div> <!-- /span12 -->
+       </div> <!-- /row-fluid -->
+       <hr>
+     </div> <!-- /container -->
+   </section> <!-- /#form -->
+
+  
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+	 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+ function textCounter(field,field2,maxlimit) {
+     var countfield = document.getElementById(field2);
+     if ( field.value.length > maxlimit ) {
+	 field.value = field.value.substring( 0, maxlimit );
+	 return false;
+     } else {
+	 countfield.value = maxlimit - field.value.length;
+     }
+ }
+
+$(document).ready(function() {
+
+    function validate_email() {
+ 	var email_regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+	if(!email_regex.test($("#authoremail").val()))
+	{
+	    $("#authoremail").focus();
+	    $('#email-help').html("<font color='red'>Please enter email in name@domain.com format.</font>");
+	    return false;
+	}else {
+	    return true;
+        }
+    }
+
+    function validate_image(){
+	var ext = $('#photo').val().split('.').pop().toLowerCase();
+	if($.inArray(ext, ['gif','png','jpg','jpeg']) == -1) {
+	    $('#photo-help').html("<font color='red'>Please upload file with gif/png/jpg/jpeg extension only.</font>");
+	    $('#photo').focus();
+	    return false;
+	}else {
+            $('#photo-help').html("");
+	    return true;
+	}
+    }
+
+    function validate_biopdf(){
+	var ext = $('#biodata-pdf').val().split('.').pop().toLowerCase();
+	if($.inArray(ext, ['pdf','pdfe']) == -1) {
+	    $('#biodata-help').html("<font color='red'>Please upload file with pdf extension only also input short bio text or upload pdf.</font>");
+	    $('#biodata-pdf').focus();
+	    return false;
+	}else {
+	    return true;
+	}
+    }
+
+    function validate_paperpdf(){
+	var ext = $('#paper-pdf').val().split('.').pop().toLowerCase();
+	if($.inArray(ext, ['pdf','pdfe']) == -1) {
+	    $('#paper-pdf-help').html("<font color='red'>Please upload file with pdf extension only.</font>");
+	    $('#paper-pdf').focus();
+	    return false;
+	}else {
+	    return true;
+	}
+    }
+    
+    $("#authoremail").focusout(function() {
+	return (validate_email());
+    });
+
+    $("#photo").focusout(function() {
+	return (validate_image());
+    });
+
+    $("#paper-pdf").focusout(function() {
+	return (validate_paperpdf());
+    });
+
+    ///------ on-submit 
+    $('#registration-form').submit(function( event ) {
+	
+	if (validate_email() == false){
+	     $('html, body').animate({
+		 scrollTop: $("#authoremail").offset().top
+	     }, 1000);
+	    event.preventDefault();
+	    return false;
+	}
+
+	if (validate_image() == false){
+	     $('html, body').animate({
+		 scrollTop: $("#photo").offset().top
+	     }, 1000);
+	    event.preventDefault();
+	    return false;
+	}
+
+	var shortbio = $('#shortbio').val();
+	if (shortbio.length <= 0){
+	    if (validate_biopdf() == false){
+		$('html, body').animate({
+		    scrollTop: $("#photo").offset().top
+		}, 1000);
+		event.preventDefault();
+		return false;
+	    }
+	}
+
+	if (validate_paperpdf() == false){
+	    $('html, body').animate({
+		scrollTop: $("#paper-pdf").offset().top
+	    }, 1000);
+	    event.preventDefault();
+	    return false;
+	}
+
+	// check short bio or bio-pdf should be present.
+	
+
+
+
+    });
+
+
+});
+			       </script>
+
+<script>
+  $('#biodata-pdf').inputFileText({
+  text: 'Upload'
+  });
+  </script>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!--<script src="dms/component/jquery-2.2.4.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!--<script src="dms/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+
+<script>
+function textCounter(field,field2,maxlimit)
+{
+ var countfield = document.getElementById(field2);
+ if ( field.value.length > maxlimit ) {
+  field.value = field.value.substring( 0, maxlimit );
+  return false;
+ } else {
+  countfield.value = maxlimit - field.value.length;
+ }
+}
+</script>
+-->
+   
+  </body>
+  
+</html>

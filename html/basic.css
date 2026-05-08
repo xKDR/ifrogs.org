@@ -1,0 +1,88 @@
+html { min-width: 600px; }
+
+body, div, td, th, h2, h3, h4 { /* redundant rules for bad browsers  */  
+    font-family: garamond,serif;
+	font-size:    medium;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: medium;
+	color: #111;
+}  
+.clearhack { display: inline; } /*Clears Box Model Hack in IE5*/
+
+body {
+	background: #EDEBE3;
+	color: #111;
+	padding: 1em 20px 3em 20px;
+	margin: 0;
+}
+
+a { color: #06C; }
+a:active { color: #000; }
+a:visited { color: #000; }
+a:hover { color: #111; }
+
+p { line-height: 140%; }
+
+h1,h2 {
+	font-family: garamond;
+	font-weight: bold;
+	color: #111;
+}
+
+h1 {
+	font-size: 130%;
+	margin: 0;
+}
+
+h1 a { text-decoration: none; color: #111; }
+h1 a:hover { border-bottom: 1px dotted #666; color: #000; }
+
+h2 {
+	font-size: 120%;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #CCC;
+	margin: 0;
+}
+
+p.note {
+	background: #EEE;
+	padding: 4px;
+	font-family: garamond;
+	font-size: 85%;
+	line-height: 130%;
+	margin-top: 0;
+}
+
+img {
+	border: 0px;
+}
+
+ .thumbnail
+{
+float: left;
+border: 1px solid #999;
+margin: 0 15px 15px 0;
+padding: 5px;
+}
+
+.clearboth { clear: both; }
+
+ul.imagelist {
+		list-style-type: none;
+		}
+ul.imagelist li {
+		float: left;
+		margin-top: 1em;
+		margin-right: 1em;
+		margin-bottom: 1em;
+		padding-left: 1em;
+		font: bold 0.8em Arial, Helvetica, sans-serif;
+		color: #008080;
+		}
+
+ul.imagelist img { 
+		display: block; 
+		border: 1px solid #999;
+		padding: 5px;
+		}

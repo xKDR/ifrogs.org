@@ -1,0 +1,25 @@
+
+At the IGIDR Finance Research Group, we focus on three areas of finance research in India:
+
+1. Financial markets. This includes issues like:
+   * Measurement of liquidity and liquidity risk
+   * Consequences of liquidity: how does it affect market efficiency
+   * Design of market microstructure to obtain liquidity and efficiency
+   * Impact of technology on market quality
+   * Systemic crises caused by liquidity shocks. Emphasis on vulnerabilities in the developing economies compared to developed markets.
+
+2. Financing constraints: small differences in resource allocation can result in first order impact, particularly in developing economies. Issues targetted here include:
+   * How do financially constraints firms behave compared to what is known in the literature?
+   * Similarly for financially constrained households.
+   * What causes financial exclusion? What changes in information systems facilitate financial inclusion?  What is the role of incentives towards this?
+   * How can policy focus on measuring the levels of financial inclusion, rather than imposing constraints on financial innovation that facilitate financial inclusion?
+   * How do local innovations such as joint liability groups and chit funds facilitate financial inclusion? How should regulation be structure to facilitate growth of these while managing systemic risk?
+
+3. Financial firms and intermediaries:
+   * How does regulation distort the behaviour of financial intermediaries? 
+   * How does the distorted behaviour affect resource allocation?
+   * What are instances of market failure in developing economies, and are they different from those in more developed markets?
+   * What are effective government interventions to address market failures?
+ 
+
+ 
